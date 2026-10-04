@@ -89,7 +89,7 @@ function saveData() {
     );
 }
 
-// 8. Menampilkan Data
+// Menampilkan Data
 function tampilkanTugas() {
     const dataTersimpan = localStorage.getItem("data_tugas");
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="ToDoList">
+            <h1>Todolisté</h1>
+            <div class="row">
+                <input
+                    type="text"
+                    id="inputTugas"
+                    placeholder="What's on your mind today?"
+                >
+                <button id="tombol">Tambah yuk!</button>
+            </div>
+            <ul id="listContainer"></ul>
+
+            <div class="statistik">
+                <div class="stat-item">
+                    <span>Total Tugas</span>
+                    <strong id="totalTugas">0</strong>
+                </div>
+                <div class="stat-item">
+                    <span>Selesai</span>
+                    <strong id="tugasSelesai">0</strong>
+                </div>
+                <div class="stat-item">
+                    <span>Belum Selesai</span>
+                    <strong id="tugasBelumSelesai">0</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

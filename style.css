@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#720002, #DB8291,#F4D6DC);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ToDoList {
+    width: 100%;
+    max-width: 500px;
+    background-color: #F4D6DC;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ToDoList h1 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: #720002;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #720002;
+    padding: 8px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#inputTugas {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+#tombol {
+    padding: 12px 18px;
+    background-color: #DB8291;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#tombol:hover {
+    background-color: #c76f7f;
+}
+
+
+#listContainer {
+    padding: 0;
+    margin: 0;
+}
+
+#listContainer li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #f5f5f5;
+    padding: 13px 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    color: #720002;
+}
+
+#listContainer li input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #DB8291;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#listContainer li input[type="checkbox"]:checked {
+    background-color: #DB8291;
+    border-color: #DB8291;
+    position: relative;
+}
+
+#listContainer li input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.task-text {
+    flex: 1;
+    font-size: 16px;
+}
+
+#listContainer li.selesai .task-text {
+    text-decoration: line-through;
+    color: #999;
+    opacity: 0.7;
+}
+
+.hapus {
+    margin-left: 10px;
+    color: #DB8291;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.statistik {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.statistik div {
+    flex: 1;
+    text-align: center;
+    color: #720002;
+}
+
+.statistik strong {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.statistik span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #DB8291;
+}
